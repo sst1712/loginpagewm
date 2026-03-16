@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* Navbar */
+
+nav{
+background:#4facfe;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+nav h2{
+letter-spacing:1px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+text-decoration:underline;
+}
+
+/* Hero Section */
+
+.hero{
+text-align:center;
+padding:60px;
+background:linear-gradient(120deg,#4facfe,#00f2fe);
+color:white;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:white;
+color:#4facfe;
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+}
+
+/* Dashboard */
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+/* Cards */
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:20px;
+color:#555;
+}
+
+.card button{
+padding:10px 20px;
+border:none;
+background:#4facfe;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#0099ff;
+}
+
+/* Footer */
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<h2>MyWebsite</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Profile</a></li>
+<li><a href="#">Settings</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<div class="hero">
+
+<h1>Welcome to Dashboard 🎉</h1>
+
+<p>Manage your account and explore features</p>
+
+<button>Explore Now</button>
+
+</div>
+
+<!-- Dashboard Cards -->
+
+<div class="dashboard">
+
+<div class="card">
+<h3>👤 Profile</h3>
+<p>View and edit your profile</p>
+<button>Open</button>
+</div>
+
+<div class="card">
+<h3>📊 Analytics</h3>
+<p>Check website statistics</p>
+<button>View Stats</button>
+</div>
+
+<div class="card">
+<h3>⚙ Settings</h3>
+<p>Update account settings</p>
+<button>Manage</button>
+</div>
+
+<div class="card">
+<h3>💬 Messages</h3>
+<p>Check new messages</p>
+<button>Open Inbox</button>
+</div>
+
+<div class="card">
+<h3>📁 Files</h3>
+<p>Manage uploaded files</p>
+<button>Open Files</button>
+</div>
+
+<div class="card">
+<h3>🛒 Orders</h3>
+<p>Track your orders</p>
+<button>View Orders</button>
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 MyWebsite | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>

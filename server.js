@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
+const serverless = require("serverless-http");
 const bcrypt = require("bcryptjs");
 
 
@@ -95,6 +96,8 @@ app.post("/app_find", async (req, res) => {
 
 /* -------------------- Server -------------------- */
 
-app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running on port ${PORT}`);
+app.get("/", (req, res) => {
+  res.send("API running");
 });
+
+module.exports = serverless(app);
